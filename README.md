@@ -3,22 +3,25 @@ UEFA Չեմպիոնների Լիգայի Հաղթողի Կանխատեսում
 Այս նախագիծը իրականացնում է UEFA Չեմպիոնների Լիգայի (UCL) 2024 թվականի հնարավոր հաղթողի կանխատեսում՝ օգտագործելով պատմական տվյալների վրա ուսուցանված մեքենայական ուսուցման մոդել։ Տվյալները վերլուծվում են PCA-ով (Գլխավոր բաղադրիչների վերլուծություն) և կիրառվում է լոգիստիկ ռեգրեսիա։
 
  Օգտագործված տվյալներ
+ 
 1. ucl_stats.csv — Պարունակում է թիմերի 1993-2020թթ-երի վիճակագրական տվյալներ՝ հաղթանակներ, պարտություններ, խփած և բաց թողած գոլեր և այլն։
 
 2. AllTimeRankingByClub.csv — Պարունակում է պատմական վարկանիշային տվյալներ։
+
+ Օգտագործվող գրադարաններ
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
- Օգտագործվող գրադարաններ
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
-Նկարագրություն
+
+ Նկարագրություն
+ 
 Նախագիծը բաղկացած է հետևյալ հիմնական փուլերից․
 
 1. Տվյալների ներմուծում

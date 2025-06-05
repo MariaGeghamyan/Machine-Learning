@@ -20,7 +20,7 @@
 - from sklearn.linear_model import LogisticRegression
 - from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 
- ### Նկարագրություն
+ ## Նկարագրություն
  
 Նախագիծը բաղկացած է հետևյալ հիմնական փուլերից․
 
